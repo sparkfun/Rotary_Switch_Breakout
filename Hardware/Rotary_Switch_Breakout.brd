@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -51,7 +51,7 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
@@ -173,7 +173,20 @@ Breakout</text>
 <text x="22.86" y="2.54" size="1.778" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">8</text>
 <text x="25.4" y="2.54" size="1.778" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">9</text>
 <text x="27.94" y="2.54" size="1.778" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">10</text>
-<text x="5.08" y="21.59" size="1.778" layer="16" font="vector" ratio="15" rot="MR0">V01</text>
+<text x="5.08" y="21.59" size="1.778" layer="16" font="vector" ratio="15" rot="MR0">V10</text>
+<wire x1="0" y1="30.48" x2="30.48" y2="30.48" width="0.2032" layer="51"/>
+<wire x1="30.48" y1="30.48" x2="30.48" y2="0" width="0.2032" layer="51"/>
+<wire x1="30.48" y1="0" x2="0" y2="0" width="0.2032" layer="51"/>
+<wire x1="0" y1="0" x2="0" y2="30.48" width="0.2032" layer="51"/>
+<dimension x1="0" y1="0" x2="0" y2="30.48" x3="-17.78" y3="15.24" textsize="1.778" textratio="15" layer="51" unit="inch" precision="4"/>
+<dimension x1="0" y1="30.48" x2="30.48" y2="30.48" x3="15.24" y3="49.53" textsize="1.778" textratio="15" layer="51" unit="inch" precision="4"/>
+<dimension x1="3.175" y1="27.305" x2="3.175" y2="30.48" x3="-10.16" y3="28.8925" textsize="1.778" textratio="15" layer="51" dtype="vertical" unit="inch" precision="4"/>
+<dimension x1="3.175" y1="27.305" x2="0" y2="27.305" x3="1.5875" y3="34.29" textsize="1.778" textratio="15" layer="51" dtype="vertical" unit="inch" precision="4"/>
+<dimension x1="30.48" y1="30.48" x2="27.305" y2="27.305" x3="44.45" y3="28.8925" textsize="1.778" textratio="15" layer="51" dtype="vertical" unit="inch" precision="4"/>
+<dimension x1="27.305" y1="27.305" x2="30.48" y2="27.305" x3="28.8925" y3="34.417" textsize="1.778" textratio="15" layer="51" unit="inch" precision="4"/>
+<dimension x1="15.24" y1="16.51" x2="0" y2="16.51" x3="7.62" y3="44.45" textsize="1.778" textratio="15" layer="51" unit="inch" precision="4"/>
+<dimension x1="15.24" y1="16.51" x2="15.24" y2="0" x3="-6.35" y3="8.255" textsize="1.778" textratio="15" layer="51" unit="inch" precision="4"/>
+<dimension x1="28.4988" y1="28.448" x2="26.1366" y2="26.1112" x3="41.46330625" y3="12.9802375" textsize="1.778" textratio="15" layer="51" unit="inch" precision="4"/>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
