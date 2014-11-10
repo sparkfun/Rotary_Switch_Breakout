@@ -15512,7 +15512,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="SW1" library="SparkFun-Electromechanical" deviceset="SWITCH_ROTARY_1X10" device="KIT" value="1x10"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M11" device="1X11_NO_SILK"/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="M"/>
-<part name="STANDOFF1" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
+<part name="STANDOFF4" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="STANDOFF2" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="LOGO3" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME" device=".1_INCH"/>
 </parts>
@@ -15528,7 +15528,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <instance part="SW1" gate="G$1" x="111.76" y="96.52"/>
 <instance part="JP1" gate="G$1" x="157.48" y="106.68" rot="R180"/>
 <instance part="LOGO1" gate="G$1" x="236.22" y="27.94"/>
-<instance part="STANDOFF1" gate="G$1" x="231.14" y="12.7"/>
+<instance part="STANDOFF4" gate="G$1" x="231.14" y="12.7"/>
 <instance part="STANDOFF2" gate="G$1" x="231.14" y="7.62"/>
 <instance part="LOGO3" gate="G$1" x="86.36" y="2.54"/>
 </instances>
