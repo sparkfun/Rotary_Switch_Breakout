@@ -14496,18 +14496,18 @@ Arrows in tDocu denote pointer positions for 45-degree shaft, assuming a knob wi
 <wire x1="3" y1="2" x2="4" y2="4" width="0.127" layer="51"/>
 <text x="4" y="-5" size="1.27" layer="51" font="vector">1</text>
 <text x="4" y="4" size="1.27" layer="51" font="vector">10</text>
-<wire x1="-10.16" y1="7.62" x2="-3.592103125" y2="14.187896875" width="0.127" layer="21"/>
-<wire x1="-3.592103125" y1="14.187896875" x2="3.592103125" y2="14.187896875" width="0.127" layer="21" curve="-90"/>
-<wire x1="3.592103125" y1="14.187896875" x2="10.16" y2="7.62" width="0.127" layer="21"/>
-<wire x1="10.16" y1="-7.62" x2="3.592103125" y2="-14.187896875" width="0.127" layer="21"/>
-<wire x1="3.592103125" y1="-14.187896875" x2="-3.592103125" y2="-14.187896875" width="0.127" layer="21" curve="-90"/>
-<wire x1="-3.592103125" y1="-14.187896875" x2="-10.16" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="-10.16" y1="7.62" x2="-10.5435375" y2="7.04469375" width="0.127" layer="21"/>
-<wire x1="-10.5435375" y1="7.04469375" x2="-10.5435375" y2="-7.04469375" width="0.127" layer="21" curve="67.380151"/>
-<wire x1="-10.5435375" y1="-7.04469375" x2="-10.16" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="10.16" y1="7.62" x2="10.520115625" y2="7.079828125" width="0.127" layer="21"/>
-<wire x1="10.520115625" y1="7.079828125" x2="10.520115625" y2="-7.079828125" width="0.127" layer="21" curve="-67.380143"/>
-<wire x1="10.520115625" y1="-7.079828125" x2="10.16" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="7.62" x2="-3.592103125" y2="14.187896875" width="0.2032" layer="21"/>
+<wire x1="-3.592103125" y1="14.187896875" x2="3.592103125" y2="14.187896875" width="0.2032" layer="21" curve="-90"/>
+<wire x1="3.592103125" y1="14.187896875" x2="10.16" y2="7.62" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="-7.62" x2="3.592103125" y2="-14.187896875" width="0.2032" layer="21"/>
+<wire x1="3.592103125" y1="-14.187896875" x2="-3.592103125" y2="-14.187896875" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-3.592103125" y1="-14.187896875" x2="-10.16" y2="-7.62" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="7.62" x2="-10.5435375" y2="7.04469375" width="0.2032" layer="21"/>
+<wire x1="-10.5435375" y1="7.04469375" x2="-10.5435375" y2="-7.04469375" width="0.2032" layer="21" curve="67.380151"/>
+<wire x1="-10.5435375" y1="-7.04469375" x2="-10.16" y2="-7.62" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="7.62" x2="10.520115625" y2="7.079828125" width="0.2032" layer="21"/>
+<wire x1="10.520115625" y1="7.079828125" x2="10.520115625" y2="-7.079828125" width="0.2032" layer="21" curve="-67.380143"/>
+<wire x1="10.520115625" y1="-7.079828125" x2="10.16" y2="-7.62" width="0.2032" layer="21"/>
 <circle x="-7.07106875" y="7.07106875" radius="0.7" width="0" layer="29"/>
 <circle x="-7.07106875" y="7.07106875" radius="1.05" width="0" layer="30"/>
 <circle x="-9.659259375" y="2.588190625" radius="0.7" width="0" layer="29"/>
@@ -14530,6 +14530,8 @@ Arrows in tDocu denote pointer positions for 45-degree shaft, assuming a knob wi
 <circle x="9.659259375" y="-2.588190625" radius="1.05" width="0" layer="30"/>
 <circle x="9.659259375" y="2.588190625" radius="1.05" width="0" layer="30"/>
 <circle x="7.07106875" y="7.07106875" radius="1.05" width="0" layer="30"/>
+<text x="-12.7" y="-2.54" size="0.8128" layer="25" rot="R90">&gt;NAME</text>
+<text x="13.97" y="-2.54" size="0.8128" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 <package name="STAND-OFF">
 <description>&lt;b&gt;Stand Off&lt;/b&gt;&lt;p&gt;
@@ -14589,7 +14591,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SWITCH_ROTARY_1X10" prefix="SW">
+<deviceset name="SWITCH_ROTARY_1X10" prefix="S">
 <description>SWCH-12120</description>
 <gates>
 <gate name="G$1" symbol="ROTARY-SWITCH-1X10" x="5.08" y="0"/>
@@ -15509,7 +15511,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
-<part name="SW1" library="SparkFun-Electromechanical" deviceset="SWITCH_ROTARY_1X10" device="KIT" value="1x10"/>
+<part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH_ROTARY_1X10" device="KIT" value="1x10"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M11" device="1X11_NO_SILK"/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="M"/>
 <part name="STANDOFF4" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
@@ -15521,11 +15523,14 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <plain>
 <text x="165.1" y="7.62" size="2.54" layer="94" font="vector">Byron Jacquot</text>
 <text x="238.76" y="7.62" size="2.54" layer="94" font="vector">V10</text>
+<text x="149.86" y="38.1" size="2.54" layer="94">Taiwan Alpha PN #SR2512F-0110-16F2B-C9-S
+ switch contacts are rated to maximum of 
+300 mA, 125 VAC.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
-<instance part="SW1" gate="G$1" x="111.76" y="96.52"/>
+<instance part="S1" gate="G$1" x="111.76" y="96.52"/>
 <instance part="JP1" gate="G$1" x="157.48" y="106.68" rot="R180"/>
 <instance part="LOGO1" gate="G$1" x="236.22" y="27.94"/>
 <instance part="STANDOFF4" gate="G$1" x="231.14" y="12.7"/>
@@ -15540,22 +15545,23 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="147.32" y1="119.38" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="119.38" x2="132.08" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="129.54" x2="99.06" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="COMMON"/>
-<wire x1="99.06" y1="129.54" x2="99.06" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="129.54" x2="96.52" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="COMMON"/>
+<wire x1="96.52" y1="129.54" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="96.52" x2="99.06" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
 <wire x1="147.32" y1="116.84" x2="106.68" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="1"/>
+<pinref part="S1" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="116.84" x2="106.68" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="SW1" gate="G$1" pin="2"/>
+<pinref part="S1" gate="G$1" pin="2"/>
 <pinref part="JP1" gate="G$1" pin="3"/>
 <wire x1="111.76" y1="109.22" x2="111.76" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="114.3" x2="147.32" y2="114.3" width="0.1524" layer="91"/>
@@ -15565,7 +15571,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <segment>
 <pinref part="JP1" gate="G$1" pin="4"/>
 <wire x1="147.32" y1="111.76" x2="116.84" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="3"/>
+<pinref part="S1" gate="G$1" pin="3"/>
 <wire x1="116.84" y1="111.76" x2="116.84" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15574,7 +15580,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <pinref part="JP1" gate="G$1" pin="5"/>
 <wire x1="147.32" y1="109.22" x2="127" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="127" y1="109.22" x2="127" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="4"/>
+<pinref part="S1" gate="G$1" pin="4"/>
 <wire x1="127" y1="104.14" x2="124.46" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15583,7 +15589,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <pinref part="JP1" gate="G$1" pin="6"/>
 <wire x1="147.32" y1="106.68" x2="129.54" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="106.68" x2="129.54" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="5"/>
+<pinref part="S1" gate="G$1" pin="5"/>
 <wire x1="129.54" y1="99.06" x2="124.46" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15592,7 +15598,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <pinref part="JP1" gate="G$1" pin="7"/>
 <wire x1="147.32" y1="104.14" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="104.14" x2="132.08" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="6"/>
+<pinref part="S1" gate="G$1" pin="6"/>
 <wire x1="132.08" y1="93.98" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15600,7 +15606,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <segment>
 <pinref part="JP1" gate="G$1" pin="8"/>
 <wire x1="147.32" y1="101.6" x2="134.62" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="7"/>
+<pinref part="S1" gate="G$1" pin="7"/>
 <wire x1="134.62" y1="101.6" x2="134.62" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="88.9" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
 </segment>
@@ -15611,13 +15617,13 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="147.32" y1="99.06" x2="137.16" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="99.06" x2="137.16" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="81.28" x2="116.84" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="8"/>
+<pinref part="S1" gate="G$1" pin="8"/>
 <wire x1="116.84" y1="81.28" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="SW1" gate="G$1" pin="9"/>
+<pinref part="S1" gate="G$1" pin="9"/>
 <wire x1="111.76" y1="83.82" x2="111.76" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="78.74" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="78.74" x2="139.7" y2="96.52" width="0.1524" layer="91"/>
@@ -15631,7 +15637,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="147.32" y1="93.98" x2="142.24" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="93.98" x2="142.24" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="76.2" x2="106.68" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="10"/>
+<pinref part="S1" gate="G$1" pin="10"/>
 <wire x1="106.68" y1="76.2" x2="106.68" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15640,4 +15646,10 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
